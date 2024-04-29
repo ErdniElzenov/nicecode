@@ -1,0 +1,133 @@
+.SearchName {
+  width: 366px;
+  &__search {
+    width: 366px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgba(158, 158, 158, 0.288);
+    &--box {
+      display: flex;
+      justify-content: space-between;
+    }
+    &--button {
+      margin: 13px 10px;
+      padding: 4px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+    &--button:hover {
+      background-color: #4198c5;
+    }
+    &--button:hover #icon {
+      fill: #ffffff;
+    }
+    &--input {
+      margin: 13px 10px;
+      border-radius: 30px;
+      width: 298px;
+      border: solid 1px #1e1e1e1a;
+    }
+    div {
+      display: flex;
+    }
+    &--input::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  input[type="checkbox"] {
+    accent-color: #4198c5;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    &--sum {
+      margin: 0 15px;
+      width: 28px;
+      height: 18px;
+      line-height: 18px;
+      background-color: #616f82;
+      border-radius: 9px;
+      color: #ffffff;
+      text-align: center;
+    }
+    &--laible {
+      display: flex;
+      align-items: center;
+      color: #616f82;
+      height: 35px;
+      margin-top: 5px;
+    }
+    &--all {
+      margin: 0 15px;
+      width: 28px;
+      height: 18px;
+      line-height: 18px;
+      background-color: #4198c5;
+      border-radius: 9px;
+      color: #ffffff;
+      text-align: center;
+    }
+    button {
+      color: #616f82;
+      border: none;
+      cursor: pointer;
+    }
+    &--settings {
+      color: #616f82;
+    }
+  }
+
+  &__users {
+    margin-top: 5px;
+  }
+  &__users--item {
+    border: none;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin: 10px 0;
+    box-shadow: 0px 1px 4px 0px #1313131a;
+
+    cursor: pointer;
+    .content {
+      display: flex;
+      input {
+        margin-left: 10px;
+      }
+      &__img {
+        padding: 10px;
+      }
+      &__name {
+        padding: 15px;
+      }
+    }
+  }
+  .selected {
+    background-color: #f1f2f4;
+    border: solid 1px #ffffff;
+    width: 364px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,63 @@
+.profil {
+  position: relative;
+  background-color: #ffffff;
+  width: 744px;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  &__avatar {
+    display: flex;
+    margin: 10px;
+    &--img {
+    }
+    &--text {
+      padding: 5px 15px;
+      font-size: 16px;
+      div {
+        font-size: 12px;
+      }
+    }
+  }
+  &__settings {
+    margin: 0 35px;
+    font-size: 30px;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 32px;
+    right: 35px;
+    width: 230px;
+    height: 88px;
+    font-size: 14px;
+    padding: 9px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    &--item {
+      padding: 10px 20px;
+    }
+    &--item:hover {
+      background-color: #f1f2f3;
+    }
+  }
+  &__settings--point {
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 0 0 13px;
+    line-height: 0.1;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__settings--point:focus {
+    background-color: #4198c5;
+    color: #ffffff;
+  }
+}

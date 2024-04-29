@@ -1,0 +1,44 @@
+.content {
+  &__mine {
+    display: flex;
+    justify-content: space-between;
+    color: #616f82;
+    margin-top: 10px;
+    &--home {
+      button {
+        background-color: #f0f0f0;
+        border: none;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 8px 0;
+        padding: 0 12px;
+        margin-right: 5px;
+        border-right: solid 1px #616f82;
+        color: #616f82;
+        cursor: pointer;
+      }
+      button.active {
+        color: #4198c5;
+      }
+      .border {
+        border-right: 0px;
+      }
+    }
+    &--add {
+      width: 175px;
+      display: flex;
+      justify-content: right;
+      padding-right: 30px;
+    }
+
+    &--text {
+      padding: 5px 10px 0 0;
+    }
+  }
+  &__event {
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 744px;
+    height: 784px;
+  }
+}

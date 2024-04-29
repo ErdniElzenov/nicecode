@@ -1,0 +1,112 @@
+.item {
+  width: 724px;
+  height: 66px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid #cdcdcd;
+  margin: 0 auto 10px;
+  cursor: pointer;
+}
+.item:hover {
+  border: 1px solid #4198c5;
+}
+.block {
+  display: flex;
+  padding: 10px;
+  height: 46px;
+}
+.text {
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notes {
+  padding: 10px 20px;
+  span {
+    color: #616f82;
+  }
+}
+
+.img {
+  background-color: #f1f2f3;
+}
+
+.imgHover {
+  background-color: #4198c5;
+}
+
+.consultation {
+  padding: 10px;
+  &__img {
+    position: relative;
+    margin-top: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f2f3;
+    .consultation {
+      position: absolute;
+      top: 5px;
+      left: 4px;
+    }
+    .reception {
+      position: absolute;
+      top: 10px;
+      left: 11px;
+    }
+  }
+
+  &__text {
+    line-height: 1.2;
+    div {
+      color: black;
+      font-size: 16px;
+    }
+    span {
+      color: #616f82;
+    }
+  }
+}
+
+.consultation:hover .consultation__img {
+  background-color: #4198c5;
+}
+
+.video {
+  padding: 10px;
+  &__text {
+    line-height: 0.9;
+    div {
+      color: black;
+    }
+    span {
+      color: #616f82;
+    }
+  }
+  &__data {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+  }
+}
+
+.event {
+  padding: 10px;
+  &__text {
+    line-height: 1.2;
+    &--name {
+      padding: 10px;
+      span {
+        margin-left: 20px;
+      }
+      img {
+        position: absolute;
+        bottom: 2px;
+      }
+    }
+    &--buttom {
+      position: relative;
+    }
+  }
+}
